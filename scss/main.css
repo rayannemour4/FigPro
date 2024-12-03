@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+body {
+  background-color: var(--WHITE);
+  color: var(--BLACK-PRIMARY);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Road Rage", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--BLACK-PRIMARY);
+}
+
+.container {
+  width: 100%;
+  max-width: 120rem;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+:root {
+  --BLACK-PRIMARY: #1b1b1b;
+  --BLACK-SECONDARY: #242424;
+  --YELLOW: #fcc26b;
+  --WHITE: #ffffff;
+  --BLACK: #000000;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2024;
+  padding: 4.7rem;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav {
+  display: flex;
+  gap: 3.7rem;
+}
+header nav a {
+  position: relative;
+  color: #514b4b;
+  font-size: 1.6rem;
+  line-height: 155.3%;
+  letter-spacing: 0.96px;
+}
+header nav a.actived {
+  color: var(--BLACK);
+  font-weight: bold;
+}
+header nav a.actived::before {
+  content: "";
+  width: 4px;
+  height: 32px;
+  background: url(/img/Line_1.svg) no-repeat center center;
+  position: absolute;
+  left: 50%;
+  margin-left: -2px;
+  top: -32px;
+}
+header nav a:hover {
+  color: var(--BLACK);
+}
+header .right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}/*# sourceMappingURL=main.css.map */

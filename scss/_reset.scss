@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; //Garantir o tamanho - sem somatória de conteúdo
+  font-family: "Roboto Mono", monospace;
+}
+
+body {
+  background-color: var(--WHITE);
+  color: var(--BLACK-PRIMARY);
+}
+
+img {
+  max-width: 100%; //Deixa a imagem responsiva
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Road Rage", sans-serif;
+}
+
+html {
+  font-size: 62.5%; //Para converter para REM
+}
+
+a {
+  text-decoration: none;
+  color: var(--BLACK-PRIMARY);
+}
+
+.container {
+  width: 100%;
+  max-width: 120rem;
+  padding: 0 15px; //Diminuir 30px do max-with para esse padding
+  margin: 0 auto; //Centralizando horizontalmente um elemento em seu container
+}

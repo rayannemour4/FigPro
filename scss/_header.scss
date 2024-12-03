@@ -1,0 +1,47 @@
+header {
+  position: absolute; //Porque o Header vai ficar em cima da próxima sessão
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2024;
+  padding: 4.7rem;
+
+  .container {
+    display: flex;
+    align-items: center; //colocando cada um dos itens em suas extremidades
+    justify-content: space-between; //colocando cada um dos itens em suas extremidades
+  }
+  nav {
+    display: flex;
+    gap: 3.7rem;
+    a {
+      position: relative; //Por conta do Actived
+      color: #514b4b;
+      font-size: 1.6rem;
+      line-height: 155.3%;
+      letter-spacing: 0.96px;
+      &.actived {
+        color: var(--BLACK);
+        font-weight: bold;
+        &::before {
+          content: "";
+          width: 4px;
+          height: 32px;
+          background: url(/img/Line_1.svg) no-repeat center center;
+          position: absolute;
+          left: 50%;
+          margin-left: -2px;
+          top: -32px;
+        }
+      }
+      &:hover {
+        color: var(--BLACK);
+      }
+    }
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+}
